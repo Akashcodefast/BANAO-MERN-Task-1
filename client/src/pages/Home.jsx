@@ -5,29 +5,29 @@ export default function Home() {
     <div className="bg-black text-white overflow-x-hidden">
 
       {/* ================= NAVBAR ================= */}
-   <nav className="absolute top-0 left-0 w-full flex items-center justify-between px-14 py-6 z-50">
-  <div className="flex items-center gap-2 font-medium">
-    <img
-      src="/squid-logo.png"
-      alt="Squid"
-      className="w-16 h-16 object-contain"
-    />
-  </div>
+      <nav className="absolute top-0 left-0 w-full flex items-center justify-between px-14 py-6 z-50">
+        <div className="flex items-center gap-2 font-medium">
+          <img
+            src="/squid-logo.png"
+            alt="Squid"
+            className="w-16 h-16 object-contain"
+          />
+        </div>
 
-  <div className="flex items-center gap-6 text-sm">
-    <span className="text-gray-300">Home</span>
+        <div className="flex items-center gap-6 text-sm">
+          <span className="text-gray-300">Home</span>
 
-    {/* Sign In Button */}
-    <Link
-      to="/login"
-      className="px-5 py-2 rounded-md text-white
+          {/* Sign In Button */}
+          <Link
+            to="/login"
+            className="px-5 py-2 rounded-md text-white
                  bg-gradient-to-r from-pink-400 to-purple-500
                  hover:opacity-90 transition"
-    >
-      Sign In
-    </Link>
-  </div>
-</nav>
+          >
+            Sign In
+          </Link>
+        </div>
+      </nav>
 
       {/* ================= HERO ================= */}
       <section className="relative bg-black text-center pt-32 pb-40 px-6 overflow-hidden">
@@ -77,61 +77,61 @@ export default function Home() {
           </button>
 
           {/* MOCKUP */}
-<div className="mt-24 flex justify-center">
-  <div className="w-[920px] max-w-[95%] bg-[#161616] rounded-2xl p-8 shadow-2xl">
-    
-    <div className="grid grid-cols-3 grid-rows-2 gap-6">
+          <div className="mt-24 flex justify-center">
+            <div className="w-[920px] max-w-[95%] bg-[#161616] rounded-2xl p-8 shadow-2xl">
 
-      {/* LEFT TALL CARD */}
-      <div className="row-span-2 bg-[#222] rounded-xl flex flex-col items-center justify-start gap-3 p-6">
-        <img src="/Vector.png" alt="Item 1" className="w-10 h-10 object-contain" />
-        <img src="/Line 15.png" alt="Item 1" className="w-28 object-contain" />
+              <div className="grid grid-cols-3 grid-rows-2 gap-6">
 
-        <img src="/Group 116.png" alt="Item 1" className="w-30 object-contain" />
-        <img src="/Group 116.png" alt="Item 2" className="w-30 object-contain" />
-        <img src="/Group 116.png" alt="Item 3" className="w-30 object-contain" />
-        <img src="/Group 116.png" alt="Item 4" className="w-30 object-contain" />
-        <img src="/Group 121.png" alt="Item 4" className="w-36 object-contain" />
-      </div>
+                {/* LEFT TALL CARD */}
+                <div className="row-span-2 bg-[#222] rounded-xl flex flex-col items-center justify-start gap-3 p-6">
+                  <img src="/Vector.png" alt="Item 1" className="w-10 h-10 object-contain" />
+                  <img src="/Line 15.png" alt="Item 1" className="w-28 object-contain" />
 
-      {/* TOP MIDDLE CARD (CIRCLE CHART) */}
-      <div className="bg-[#222] rounded-xl flex items-center justify-center">
-        <img
-          src="/Group 115.png"
-          alt="Squid"
-          className="w-40 h-40 object-contain"
-        />
-      </div>
+                  <img src="/Group 116.png" alt="Item 1" className="w-30 object-contain" />
+                  <img src="/Group 116.png" alt="Item 2" className="w-30 object-contain" />
+                  <img src="/Group 116.png" alt="Item 3" className="w-30 object-contain" />
+                  <img src="/Group 116.png" alt="Item 4" className="w-30 object-contain" />
+                  <img src="/Group 121.png" alt="Item 4" className="w-36 object-contain" />
+                </div>
 
-      {/* RIGHT TALL CARD */}
-<div className="bg-[#222] rounded-xl flex items-center justify-center h-[180px] p-4">
-  <img
-    src="/Rectangle 54.png"
-    alt="Squid"
-    className="max-h-full max-w-full object-contain"
-  />
-</div>
+                {/* TOP MIDDLE CARD (CIRCLE CHART) */}
+                <div className="bg-[#222] rounded-xl flex items-center justify-center">
+                  <img
+                    src="/Group 115.png"
+                    alt="Squid"
+                    className="w-40 h-40 object-contain"
+                  />
+                </div>
 
-    
-
-      {/* BOTTOM MIDDLE HALF CARD */}
-<div className="bg-[#222] rounded-xl flex flex-col items-center justify-center gap-4 h-[180px]">
-  <img
-    src="/Group 116.png"
-    alt="Squid"
-    className="w-24 object-contain"
-  />
-  <img
-    src="/Group 132.png"
-    alt="Group 132"
-    className="w-32 object-contain"
-  />
-</div>
+                {/* RIGHT TALL CARD */}
+                <div className="bg-[#222] rounded-xl flex items-center justify-center h-[180px] p-4">
+                  <img
+                    src="/Rectangle 54.png"
+                    alt="Squid"
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
 
 
-    </div>
-  </div>
-</div>
+
+                {/* BOTTOM MIDDLE HALF CARD */}
+                <div className="bg-[#222] rounded-xl flex flex-col items-center justify-center gap-4 h-[180px]">
+                  <img
+                    src="/Group 116.png"
+                    alt="Squid"
+                    className="w-24 object-contain"
+                  />
+                  <img
+                    src="/Group 132.png"
+                    alt="Group 132"
+                    className="w-32 object-contain"
+                  />
+                </div>
+
+
+              </div>
+            </div>
+          </div>
 
         </div>
       </section>
@@ -146,48 +146,48 @@ export default function Home() {
           functional. It should be able to solve the problem
         </p>
 
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-  {[
-    "/Group 102.png",
-    "/Group 103.png",
-    "/Group 104.png",
-    "/Group 105.png",
-    "/Group 106.png",
-    "/Group 107.png",
-  ].map((src, i) => (
-    <div
-      key={i}
-      className="bg-[#171717] p-10 rounded-2xl text-center"
-    >
-      <div className="w-14 h-14 mx-auto mb-6 bg-[#222] rounded-xl flex items-center justify-center">
-        <img
-          src={src}
-          alt={`Feature ${i + 1}`}
-          className="w-7 h-7 object-contain"
-        />
-      </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            "/Group 102.png",
+            "/Group 103.png",
+            "/Group 104.png",
+            "/Group 105.png",
+            "/Group 106.png",
+            "/Group 107.png",
+          ].map((src, i) => (
+            <div
+              key={i}
+              className="bg-[#171717] p-10 rounded-2xl text-center"
+            >
+              <div className="w-14 h-14 mx-auto mb-6 bg-[#222] rounded-xl flex items-center justify-center">
+                <img
+                  src={src}
+                  alt={`Feature ${i + 1}`}
+                  className="w-7 h-7 object-contain"
+                />
+              </div>
 
-      <h3 className="font-medium mb-2">Fully Customizable</h3>
+              <h3 className="font-medium mb-2">Fully Customizable</h3>
 
-      <p className="text-gray-400 text-sm">
-        A good design is not only aesthetically pleasing, but also
-        functional.
-      </p>
-    </div>
-  ))}
-</div>
+              <p className="text-gray-400 text-sm">
+                A good design is not only aesthetically pleasing, but also
+                functional.
+              </p>
+            </div>
+          ))}
+        </div>
 
       </section>
 
       {/* ================= GUIDE ================= */}
       <section className="py-40 px-14 flex flex-col lg:flex-row items-center gap-20">
         <div className="w-[420px] h-[420px] rounded-full border border-white/10 flex items-center justify-center text-6xl">
- <img
-  src="/glob.png"
-  alt="Squid"
-  className="max-w-full max-h-full object-contain"
-/>
-  
+          <img
+            src="/glob.png"
+            alt="Squid"
+            className="max-w-full max-h-full object-contain"
+          />
+
         </div>
 
         <div className="max-w-xl">
@@ -205,28 +205,28 @@ export default function Home() {
 
       {/* ================= COMPANIES ================= */}
       <section className="bg-[#111] py-28 text-center">
-  <h2 className="text-3xl font-semibold mb-14 leading-tight">
-    Companies we Worked <br /> With in Since 2015
-  </h2>
+        <h2 className="text-3xl font-semibold mb-14 leading-tight">
+          Companies we Worked <br /> With in Since 2015
+        </h2>
 
-  <div className="flex justify-center gap-6 flex-wrap">
-    {["Smile", "Urban", "natural", "WAVE", "HAPPY", "Alisa"].map(
-      (name, i) => (
-        <div
-          key={i}
-          className="w-[140px] h-[56px]
+        <div className="flex justify-center gap-6 flex-wrap">
+          {["Smile", "Urban", "natural", "WAVE", "HAPPY", "Alisa"].map(
+            (name, i) => (
+              <div
+                key={i}
+                className="w-[140px] h-[56px]
                      flex items-center justify-center
                      bg-black rounded-xl
                      text-gray-500 text-lg
                      font-medium
                      shadow-inner"
-        >
-          {name}
+              >
+                {name}
+              </div>
+            )
+          )}
         </div>
-      )
-    )}
-  </div>
-</section>
+      </section>
 
 
       {/* ================= CTA ================= */}
@@ -242,26 +242,26 @@ export default function Home() {
             </button>
           </div>
           <div className="hidden lg:flex items-center justify-center h-full w-[420px]">
-  <div className="relative w-[320px] h-[320px] rounded-full border border-black/10">
+            <div className="relative w-[320px] h-[320px] rounded-full border border-black/10">
 
-    {/* CENTER LOGO */}
-    <div className="absolute inset-0 flex items-center justify-center">
-      <div className="w-16 h-16 rounded-full bg-black/20 flex items-center justify-center text-2xl">
-        🦑
-      </div>
-    </div>
+              {/* CENTER LOGO */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-black/20 flex items-center justify-center text-2xl">
+                  🦑
+                </div>
+              </div>
 
-    {/* ORBIT DOTS */}
-    <span className="absolute top-6 left-1/2 -translate-x-1/2 text-xl">🌍</span>
-    <span className="absolute right-6 top-1/2 -translate-y-1/2 text-xl">👥</span>
-    <span className="absolute bottom-6 left-1/2 -translate-x-1/2 text-xl">📈</span>
-    <span className="absolute left-6 top-1/2 -translate-y-1/2 text-xl">⚙️</span>
+              {/* ORBIT DOTS */}
+              <span className="absolute top-6 left-1/2 -translate-x-1/2 text-xl">🌍</span>
+              <span className="absolute right-6 top-1/2 -translate-y-1/2 text-xl">👥</span>
+              <span className="absolute bottom-6 left-1/2 -translate-x-1/2 text-xl">📈</span>
+              <span className="absolute left-6 top-1/2 -translate-y-1/2 text-xl">⚙️</span>
 
-    {/* SOFT RINGS */}
-    <div className="absolute inset-8 rounded-full border border-black/10"></div>
-    <div className="absolute inset-14 rounded-full border border-black/10"></div>
-  </div>
-</div>
+              {/* SOFT RINGS */}
+              <div className="absolute inset-8 rounded-full border border-black/10"></div>
+              <div className="absolute inset-14 rounded-full border border-black/10"></div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -269,10 +269,10 @@ export default function Home() {
       <section className="py-40 px-14 flex flex-col lg:flex-row gap-20 items-center">
         <div className="w-[420px] h-[420px] rounded-full border border-white/10 flex items-center justify-center text-6xl">
           <img
-    src="/symbol.png"
-    alt="symbol"
-    className="max-h-full max-w-full object-contain"
-  />
+            src="/symbol.png"
+            alt="symbol"
+            className="max-h-full max-w-full object-contain"
+          />
         </div>
 
         <div className="w-full max-w-lg">
@@ -318,35 +318,35 @@ export default function Home() {
           </div>
         </div>
 
-<div className="mt-12 border-t border-white/10 pt-6 px-2
+        <div className="mt-12 border-t border-white/10 pt-6 px-2
                 flex items-center justify-between
                 text-xs text-gray-500">
 
-  <span>All Rights Reserved Inkyy.com 2022</span>
+          <span>All Rights Reserved Inkyy.com 2022</span>
 
-  <div className="flex gap-3">
-    <div className="w-9 h-9 rounded-full bg-[#1a1a1a]
+          <div className="flex gap-3">
+            <div className="w-9 h-9 rounded-full bg-[#1a1a1a]
                     flex items-center justify-center
                     text-white/70 hover:text-white
                     transition cursor-pointer">
-      <img src="/ELEMENTS.png" alt="Item 1" className="w-30 object-contain" />
-    </div>
+              <img src="/ELEMENTS.png" alt="Item 1" className="w-30 object-contain" />
+            </div>
 
-    <div className="w-9 h-9 rounded-full bg-[#1a1a1a]
+            <div className="w-9 h-9 rounded-full bg-[#1a1a1a]
                     flex items-center justify-center
                     text-white/70 hover:text-white
                     transition cursor-pointer">
-      <img src="/ELEMENT2.png" alt="Item 1" className="w-30 object-contain" />
-    </div>
+              <img src="/ELEMENT2.png" alt="Item 1" className="w-30 object-contain" />
+            </div>
 
-    <div className="w-9 h-9 rounded-full bg-[#1a1a1a]
+            <div className="w-9 h-9 rounded-full bg-[#1a1a1a]
                     flex items-center justify-center
                     text-white/70 hover:text-white
                     transition cursor-pointer">
-    <img src="/ELEMENT3.png" alt="Item 1" className="w-30 object-contain" />
-    </div>
-  </div>
-</div>
+              <img src="/ELEMENT3.png" alt="Item 1" className="w-30 object-contain" />
+            </div>
+          </div>
+        </div>
 
       </footer>
     </div>
