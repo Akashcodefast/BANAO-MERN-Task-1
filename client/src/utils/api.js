@@ -1,4 +1,11 @@
-import axios from "axios";
+const BASE_URL = import.meta.env.VITE_API_URL;
 
-export const fetchUsers = () =>
-  axios.get("http://localhost:5000/api/users");
+export const loginUser = async (data) => {
+  const res = await fetch(`${BASE_URL}/api/users/login`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+
+  return res.json();
+};
