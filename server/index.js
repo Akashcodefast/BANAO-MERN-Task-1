@@ -10,8 +10,9 @@ app.use(express.json());
 app.use("/api/users", usersRoute);
 
 app.get("/", (req, res) => {
-  res.send("Backend running");
+  res.send("Backend is running 🚀");
 });
+
 
 const PORT = process.env.PORT || 5000;
 
