@@ -1,25 +1,33 @@
+import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
     <div className="bg-black text-white overflow-x-hidden">
 
       {/* ================= NAVBAR ================= */}
-      <nav className="absolute top-0 left-0 w-full flex items-center justify-between px-14 py-6 z-50">
-        <div className="flex items-center gap-2 font-medium">
-          <img
-            src="/squid-logo.png"
-            alt="Squid"
-            className="w-16 h- 16 object-contain"
-          />
+   <nav className="absolute top-0 left-0 w-full flex items-center justify-between px-14 py-6 z-50">
+  <div className="flex items-center gap-2 font-medium">
+    <img
+      src="/squid-logo.png"
+      alt="Squid"
+      className="w-16 h-16 object-contain"
+    />
+  </div>
 
-        </div>
+  <div className="flex items-center gap-6 text-sm">
+    <span className="text-gray-300">Home</span>
 
-        <div className="flex items-center gap-6 text-sm">
-          <span className="text-gray-300">Home</span>
-          <button className="px-5 py-2 rounded-md bg-gradient-to-r from-pink-400 to-purple-500">
-            Download Template
-          </button>
-        </div>
-      </nav>
+    {/* Sign In Button */}
+    <Link
+      to="/login"
+      className="px-5 py-2 rounded-md text-white
+                 bg-gradient-to-r from-pink-400 to-purple-500
+                 hover:opacity-90 transition"
+    >
+      Sign In
+    </Link>
+  </div>
+</nav>
 
       {/* ================= HERO ================= */}
       <section className="relative bg-black text-center pt-32 pb-40 px-6 overflow-hidden">
