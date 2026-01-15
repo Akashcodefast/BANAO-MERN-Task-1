@@ -14,29 +14,27 @@ export default function Login() {
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
     if (isSignup) {
       localStorage.setItem(
         "user",
-        JSON.stringify({
-          name: form.name,
-          email: form.email,
-          password: form.password,
-        })
+        JSON.stringify(form)
       );
     }
 
-    // fake auth
     localStorage.setItem("token", "dummy-token");
-    localStorage.setItem("currentUser", form.email);
+    localStorage.setItem("currentUser", form.email || "guest");
+
     navigate("/dashboard");
   };
 
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center px-4">
-      <div className="w-full max-w-md bg-[#141414] rounded-2xl p-8 shadow-2xl">
+    <div className="min-h-screen bg-black flex items-center justify-center px-4">
+      <div className="w-full max-w-md bg-[#141414] rounded-2xl p-8 shadow-2xl text-white">
 
-        {/* Title */}
+        {/* TITLE */}
         <div className="mb-8">
           <h2 className="text-3xl font-semibold">
             {isSignup ? "Create Account" : "Welcome Back"}
@@ -48,43 +46,60 @@ export default function Login() {
           </p>
         </div>
 
-        {/* FORM – VERTICAL ONLY */}
-        <div className="flex flex-col gap-4">
+        {/* FORM */}
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
 
           {isSignup && (
             <input
               name="name"
-              placeholder="Full Name"
+              value={form.name}
               onChange={handleChange}
-              className="auth-input"
+              placeholder="Full Name"
+              className="w-full px-4 py-3 rounded-md
+                         bg-[#111] text-white
+                         placeholder:text-white/40
+                         border border-white/15
+                         outline-none focus:border-purple-500"
             />
           )}
 
           <input
             name="email"
             type="email"
-            placeholder="Email"
+            value={form.email}
             onChange={handleChange}
-            className="auth-input"
+            placeholder="Email"
+            className="w-full px-4 py-3 rounded-md
+                       bg-[#111] text-white
+                       placeholder:text-white/40
+                       border border-white/15
+                       outline-none focus:border-purple-500"
           />
 
           <input
             name="password"
             type="password"
-            placeholder="Password"
+            value={form.password}
             onChange={handleChange}
-            className="auth-input"
+            placeholder="Password"
+            className="w-full px-4 py-3 rounded-md
+                       bg-[#111] text-white
+                       placeholder:text-white/40
+                       border border-white/15
+                       outline-none focus:border-purple-500"
           />
 
           <button
-            onClick={handleSubmit}
-            className="mt-2 py-3 rounded-md bg-gradient-to-r from-pink-400 to-purple-500 font-medium"
+            type="submit"
+            className="mt-2 py-3 rounded-md
+                       bg-gradient-to-r from-pink-400 to-purple-500
+                       text-white font-medium"
           >
             {isSignup ? "Sign Up" : "Login"}
           </button>
-        </div>
+        </form>
 
-        {/* TOGGLE – ALSO VERTICAL */}
+        {/* TOGGLE */}
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-400 mb-2">
             {isSignup ? "Already have an account?" : "New here?"}
@@ -96,7 +111,6 @@ export default function Login() {
             {isSignup ? "Login instead" : "Create an account"}
           </button>
         </div>
-
       </div>
     </div>
   );
